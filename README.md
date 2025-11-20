@@ -10,5 +10,5 @@ Test team project for academy
 Разработка ведётся командой:
 
 - [Тахциди М.Д.](https://github.com/Vedear)
-- [Лачков С.В](https://github.com/regent1911)
+- [Лачков С.В](https://github.com/regent1911) - Удалёнщик, грустный админ-программист
 - [Иван Иван](https://github.com/username)
