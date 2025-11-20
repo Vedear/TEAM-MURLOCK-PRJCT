@@ -9,6 +9,6 @@ Test team project for academy
 
 Разработка ведётся командой:
 
-- [Иван Иванов](https://github.com/username)
+- [Тахциди М.Д.](https://github.com/Vedear)
 - [Лачков С.В](https://github.com/regent1911)
 - [Иван Иван](https://github.com/username)
