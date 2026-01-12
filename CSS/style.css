@@ -229,11 +229,11 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .services-grid, .features-grid {
         grid-template-columns: 1fr;
     }
