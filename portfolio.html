@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - BotMurlock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fab fa-telegram logo-icon"></i>
+                    <span>BotMurlock</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="pricing.html"><i class="fas fa-tags"></i> Цены</a></li>
+                    <li><a href="portfolio.html" class="active"><i class="fas fa-briefcase"></i> Портфолио</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Герой секция -->
+            <section class="portfolio-hero animate-fade-up">
+                <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">Наши лучшие проекты</h1>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #666;">
+                    Более 150 успешно реализованных Telegram ботов для бизнеса, образования, развлечений и автоматизации. Каждый бот — уникальное решение под конкретные задачи клиента.
+                </p>
+                
+                <div class="portfolio-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Проектов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Поддержка</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3-30</span>
+                        <span class="stat-label">Дней разработки</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Фильтры портфолио -->
+            <div class="portfolio-filters">
+                <button class="filter-btn filter-active" data-filter="all">Все проекты</button>
+                <button class="filter-btn" data-filter="business">Бизнес</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="education">Образование</button>
+                <button class="filter-btn" data-filter="entertainment">Развлечения</button>
+                <button class="filter-btn" data-filter="service">Сервисные</button>
+            </div>
+
+            <!-- Сетка портфолио -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Бот для интернет-магазина -->
+                <div class="portfolio-card portfolio-item" data-category="ecommerce" data-delay="0">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="portfolio-badge">Популярный</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">E-commerce</span>
+                        <h3>FashionStore Bot</h3>
+                        <p class="portfolio-description">
+                            Полноценный интернет-магазин одежды в Telegram с каталогом, корзиной, онлайн-оплатой и отслеживанием заказов.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag"><i class="fab fa-python tech-icon-animate"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-database tech-icon-animate"></i> PostgreSQL</span>
+                            <span class="tech-tag"><i class="fas fa-credit-card tech-icon-animate"></i> ЮKassa</span>
+                        </div>
+                        <button class="portfolio-link view-details" data-project="1">Подробнее о проекте</button>
+                    </div>
+                </div>
+
+                <!-- Бот для онлайн-школы -->
+                <div class="portfolio-card portfolio-item" data-category="education" data-delay="0.1">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="portfolio-badge">Образование</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Образование</span>
+                        <h3>EduLearn Bot</h3>
+                        <p class="portfolio-description">
+                            Платформа для онлайн-курсов с уроками, тестами, домашними заданиями и автоматической проверкой.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag"><i class="fab fa-node-js tech-icon-animate"></i> Node.js</span>
+                            <span class="tech-tag"><i class="fas fa-brain tech-icon-animate"></i> AI</span>
+                            <span class="tech-tag"><i class="fas fa-chart-line tech-icon-animate"></i> Аналитика</span>
+                        </div>
+                        <button class="portfolio-link view-details" data-project="2">Подробнее о проекте</button>
+                    </div>
+                </div>
+
+                <!-- Бот для ресторана -->
+                <div class="portfolio-card portfolio-item" data-category="business" data-delay="0.2">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-utensils"></i>
+                        <span class="portfolio-badge">Бизнес</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Бизнес</span>
+                        <h3>FoodDelivery Bot</h3>
+                        <p class="portfolio-description">
+                            Система заказа еды с онлайн-меню, выбором времени доставки, отслеживанием курьера и отзывами.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag"><i class="fab fa-python tech-icon-animate"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-map-marked-alt tech-icon-animate"></i> Яндекс.Карты</span>
+                            <span class="tech-tag"><i class="fas fa-bell tech-icon-animate"></i> Уведомления</span>
+                        </div>
+                        <button class="portfolio-link view-details" data-project="3">Подробнее о проекте</button>
+                    </div>
+                </div>
+
+                <!-- Игровой бот -->
+                <div class="portfolio-card portfolio-item" data-category="entertainment" data-delay="0.3">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="portfolio-badge">Развлечения</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Развлечения</span>
+                        <h3>GameZone Bot</h3>
+                        <p class="portfolio-description">
+                            Игровая платформа с 10+ мини-играми, рейтингами, ежедневными наградами и мультиплеером.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag"><i class="fab fa-js-square tech-icon-animate"></i> JavaScript</span>
+                            <span class="tech-tag"><i class="fas fa-trophy tech-icon-animate"></i> Лидерборды</span>
+                            <span class="tech-tag"><i class="fas fa-coins tech-icon-animate"></i> Внутренняя валюта</span>
+                        </div>
+                        <button class="portfolio-link view-details" data-project="4">Подробнее о проекте</button>
+                    </div>
+                </div>
+
+                <!-- Бот для бронирования -->
+                <div class="portfolio-card portfolio-item" data-category="service" data-delay="0.4">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="portfolio-badge">Сервис</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Сервисные</span>
+                        <h3>BookingMaster Bot</h3>
+                        <p class="portfolio-description">
+                            Система бронирования для салонов красоты с выбором услуги, мастера, времени и онлайн-оплатой.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag"><i class="fab fa-node-js tech-icon-animate"></i> Node.js</span>
+                            <span class="tech-tag"><i class="fas fa-calendar-alt tech-icon-animate"></i> Календарь</span>
+                            <span class="tech-tag"><i class="fas fa-sync-alt tech-icon-animate"></i> Синхронизация</span>
+                        </div>
+                        <button class="portfolio-link view-details" data-project="5">Подробнее о проекте</button>
+                    </div>
+                </div>
+
+                <!-- Бот для поддержки -->
+                <div class="portfolio-card portfolio-item" data-category="business" data-delay="0.5">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);">
+                        <i class="fas fa-headset"></i>
+                        <span class="portfolio-badge">Поддержка</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Бизнес</span>
+                        <h3>SupportPro Bot</h3>
+                        <p class="portfolio-description">
+                            AI-помощник для службы поддержки с автоматическими ответами, эскалацией и интеграцией с CRM.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag"><i class="fas fa-robot tech-icon-animate"></i> AI/ML</span>
+                            <span class="tech-tag"><i class="fas fa-comments tech-icon-animate"></i> Чат</span>
+                            <span class="tech-tag"><i class="fas fa-cogs tech-icon-animate"></i> Интеграции</span>
+                        </div>
+                        <button class="portfolio-link view-details" data-project="6">Подробнее о проекте</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Процесс работы -->
+            <section class="process-section">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Как мы работаем</h2>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Анализ</h3>
+                        <p class="step-desc">Изучаем ваши задачи и цели</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Прототип</h3>
+                        <p class="step-desc">Создаем дизайн и структуру бота</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Разработка</h3>
+                        <p class="step-desc">Пишем код и интегрируем системы</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Тестирование</h3>
+                        <p class="step-desc">Проверяем все сценарии работы</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3 class="step-title">Запуск</h3>
+                        <p class="step-desc">Публикуем бота и обучаем команду</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA секция -->
+            <section style="text-align: center; padding: 4rem 0; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 15px;">
+                <h2 style="margin-bottom: 1rem;">Хотите такой же бот?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem; color: #666;">
+                    Расскажите о вашем проекте, и мы разработаем уникального бота, который решит именно ваши задачи.
+                </p>
+                <a href="contact.html" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">Обсудить проект</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Модальное окно деталей проекта -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Контент будет загружаться динамически -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BotMurlock</h3>
+                    <p>Профессиональная разработка Telegram ботов с 2020 года. Более 150 успешно реализованных проектов.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@botmurlock.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Технологическая, 42</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 BotMurlock. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
