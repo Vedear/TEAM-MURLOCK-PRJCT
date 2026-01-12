@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены - BotMurlock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fab fa-telegram logo-icon"></i>
+                    <span>BotMurlock</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="pricing.html" class="active"><i class="fas fa-tags"></i> Цены</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Герой секция -->
+            <section class="pricing-hero animate-fade-up">
+                <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">Прозрачные тарифы на разработку ботов</h1>
+                <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.2rem; color: #666;">
+                    Выберите подходящий тариф или закажите индивидуальный бот. Все цены фиксированы и включают техническую поддержку.
+                </p>
+                
+                <!-- Тогглер периодов оплаты -->
+                <div class="billing-toggle">
+                    <span class="billing-option active" id="monthly">Ежемесячно</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="billing-option" id="yearly">Ежегодно 
+                        <span class="year-savings">Экономия 20%</span>
+                    </span>
+                </div>
+            </section>
+
+            <!-- Карточки тарифов -->
+            <section class="pricing-container">
+                <!-- Бесплатный тариф -->
+                <div class="pricing-card pricing-card-free animate-fade-up">
+                    <div class="pricing-header">
+                        <h3 style="color: #667eea;">Бесплатный</h3>
+                        <div class="price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-monthly active">0</span>
+                            <span class="price-yearly">0</span>
+                        </div>
+                        <p class="price-period">навсегда</p>
+                        <p>Идеально для тестирования и небольших проектов</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check feature-check"></i> Простой бот на базе шаблонов</li>
+                        <li><i class="fas fa-check feature-check"></i> До 100 пользователей в месяц</li>
+                        <li><i class="fas fa-check feature-check"></i> Базовые команды</li>
+                        <li><i class="fas fa-times feature-cross"></i> Интеграции с API</li>
+                        <li><i class="fas fa-times feature-cross"></i> Кастомный дизайн</li>
+                        <li><i class="fas fa-times feature-cross"></i> Техническая поддержка</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="width: 100%; text-align: center; background: #667eea;">Начать бесплатно</a>
+                </div>
+
+                <!-- Стартовый тариф -->
+                <div class="pricing-card pricing-card-starter animate-fade-up animate-delay-1">
+                    <div class="pricing-header">
+                        <h3 style="color: #4facfe;">Starter</h3>
+                        <div class="price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-monthly active">14,900</span>
+                            <span class="price-yearly">11,920</span>
+                            <span class="price-period">/месяц</span>
+                        </div>
+                        <p>Для малого бизнеса и стартапов</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check feature-check"></i> Кастомный бот под ваши задачи</li>
+                        <li><i class="fas fa-check feature-check"></i> До 1,000 пользователей в месяц</li>
+                        <li><i class="fas fa-check feature-check"></i> Базовые интеграции (1 API)</li>
+                        <li><i class="fas fa-check feature-check"></i> Простой дизайн интерфейса</li>
+                        <li><i class="fas fa-check feature-check"></i> Поддержка по email</li>
+                        <li><i class="fas fa-times feature-cross"></i> Аналитика и отчеты</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="width: 100%; text-align: center; background: linear-gradient(to right, #4facfe, #00f2fe);">Выбрать стартовый</a>
+                </div>
+
+                <!-- Профессиональный тариф -->
+                <div class="pricing-card pricing-card-pro animate-fade-up animate-delay-2">
+                    <div class="recommended-badge">РЕКОМЕНДУЕМ</div>
+                    <div class="pricing-header">
+                        <h3 style="color: #f093fb;">Pro</h3>
+                        <div class="price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-monthly active">29,900</span>
+                            <span class="price-yearly">23,920</span>
+                            <span class="price-period">/месяц</span>
+                        </div>
+                        <p>Для растущего бизнеса</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check feature-check"></i> Продвинутый бот с AI элементами</li>
+                        <li><i class="fas fa-infinity feature-limit"></i> Безлимитные пользователи</li>
+                        <li><i class="fas fa-check feature-check"></i> Расширенные интеграции (до 3 API)</li>
+                        <li><i class="fas fa-check feature-check"></i> Кастомный дизайн и анимации</li>
+                        <li><i class="fas fa-check feature-check"></i> Приоритетная поддержка 24/7</li>
+                        <li><i class="fas fa-check feature-check"></i> Базовая аналитика</li>
+                    </ul>
+                    <a href="contact.html" class="btn gradient-animate" style="width: 100%; text-align: center;">Выбрать профессиональный</a>
+                </div>
+
+                <!-- Бизнес тариф -->
+                <div class="pricing-card pricing-card-business animate-fade-up animate-delay-3">
+                    <div class="pricing-header">
+                        <h3 style="color: #43e97b;">Business</h3>
+                        <div class="price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-monthly active">от 59,900</span>
+                            <span class="price-yearly">от 47,920</span>
+                            <span class="price-period">/месяц</span>
+                        </div>
+                        <p>Для корпораций и крупных проектов</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check feature-check"></i> Эксклюзивный бот с уникальным функционалом</li>
+                        <li><i class="fas fa-infinity feature-limit"></i> Безлимитные пользователи</li>
+                        <li><i class="fas fa-check feature-check"></i> Неограниченные интеграции</li>
+                        <li><i class="fas fa-check feature-check"></i> Премиум дизайн и UX/UI</li>
+                        <li><i class="fas fa-check feature-check"></i> Персональный менеджер</li>
+                        <li><i class="fas fa-check feature-check"></i> Расширенная аналитика и отчеты</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="width: 100%; text-align: center; background: linear-gradient(to right, #43e97b, #38f9d7);">Обсудить проект</a>
+                </div>
+            </section>
+
+            <!-- Таблица сравнения -->
+            <section class="comparison-section">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Сравнение тарифов</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;">Функции</th>
+                                <th>Бесплатный</th>
+                                <th>Стартовый</th>
+                                <th>Профессиональный</th>
+                                <th>Бизнес</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">Цена в месяц</td>
+                                <td>₽0</td>
+                                <td>₽14,900</td>
+                                <td>₽29,900</td>
+                                <td>от ₽59,900</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Пользователи</td>
+                                <td>до 100</td>
+                                <td>до 1,000</td>
+                                <td>Безлимитно</td>
+                                <td>Безлимитно</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Интеграции API</td>
+                                <td><i class="fas fa-times comparison-icon icon-no"></i></td>
+                                <td>1 интеграция</td>
+                                <td>до 3 интеграций</td>
+                                <td>Неограниченно</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Кастомный дизайн</td>
+                                <td><i class="fas fa-times comparison-icon icon-no"></i></td>
+                                <td>Базовый</td>
+                                <td><i class="fas fa-check comparison-icon icon-yes"></i></td>
+                                <td><i class="fas fa-check comparison-icon icon-yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Техническая поддержка</td>
+                                <td><i class="fas fa-times comparison-icon icon-no"></i></td>
+                                <td>Email</td>
+                                <td>24/7 Приоритетная</td>
+                                <td>Персональный менеджер</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Аналитика</td>
+                                <td><i class="fas fa-times comparison-icon icon-no"></i></td>
+                                <td><i class="fas fa-times comparison-icon icon-no"></i></td>
+                                <td>Базовая</td>
+                                <td>Расширенная</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Время разработки</td>
+                                <td>1-3 дня</td>
+                                <td>7-14 дней</td>
+                                <td>14-30 дней</td>
+                                <td>Индивидуально</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Обновления</td>
+                                <td>Только безопасности</td>
+                                <td>1 раз в месяц</td>
+                                <td>2 раза в месяц</td>
+                                <td>По требованию</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- FAQ секция -->
+            <section class="faq-section">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Часто задаваемые вопросы</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли поменять тариф позже?</span>
+                        <i class="fas fa-plus faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете в любой момент перейти на другой тариф. При переходе на более дорогой тариф разница будет пропорционально пересчитана. При переходе на более дешевый тариф мы вернем разницу за неиспользованный период.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Что входит в стоимость разработки?</span>
+                        <i class="fas fa-plus faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В стоимость входит: анализ требований, проектирование архитектуры бота, разработка, тестирование, размещение на сервере, базовое наполнение контентом и обучение вашей команды. Дополнительные услуги (интеграции, дизайн) оговариваются отдельно.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Есть ли пробный период для платных тарифов?</span>
+                        <i class="fas fa-plus faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, для тарифов "Starter" и "Pro" мы предоставляем 14-дневный пробный период. В течение этого времени вы можете протестировать все функции тарифа бесплатно.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Что если мой бот перестанет работать?</span>
+                        <i class="fas fa-plus faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы гарантируем 99.9% времени работы. В случае неполадок наша команда реагирует в течение 15 минут (для Pro и Business тарифов) или 2 часов (для Starter). Все инциденты фиксируются и анализируются для предотвращения в будущем.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA секция -->
+            <section class="cta-section" style="text-align: center; padding: 4rem 0;">
+                <h2 style="margin-bottom: 1rem;">Нужен индивидуальный бот?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem; color: #666;">
+                    Расскажите нам о вашем проекте, и мы подготовим индивидуальное коммерческое предложение с точными сроками и стоимостью.
+                </p>
+                <a href="contact.html" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">Обсудить индивидуальный проект</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BotMurlock</h3>
+                    <p>Профессиональная разработка Telegram ботов с 2020 года. Более 150 успешно реализованных проектов.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@botmurlock.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Технологическая, 42</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 BotMurlock. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
