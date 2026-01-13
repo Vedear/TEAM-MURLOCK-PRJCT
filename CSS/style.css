@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scrollbar-color: #677ce7 #7451ab;
+      scrollbar-width: thin;
 }
 
 body {
