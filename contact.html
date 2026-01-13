@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -30,16 +32,19 @@
         <div class="container">
             <section class="contact-content">
                 <h1 style="text-align: center; margin-bottom: 1rem;">Свяжитесь с нами</h1>
-                <p style="text-align: center; margin-bottom: 3rem; color: #666;">Оставьте заявку, и мы свяжемся с вами в течение 2 часов для обсуждения вашего проекта</p>
+                <p style="text-align: center; margin-bottom: 3rem; color: #666;">Оставьте заявку, и мы свяжемся с вами в
+                    течение 2 часов для обсуждения вашего проекта</p>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
                     <!-- Контактная информация -->
                     <div>
                         <h2 style="color: #667eea; margin-bottom: 1.5rem;">Наши контакты</h2>
 
-                        <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+                        <div
+                            style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
                             <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-                                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <div
+                                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div>
@@ -49,7 +54,8 @@
                             </div>
 
                             <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-                                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <div
+                                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div>
@@ -59,7 +65,8 @@
                             </div>
 
                             <div style="display: flex; align-items: center;">
-                                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <div
+                                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div>
@@ -71,18 +78,22 @@
 
                         <h3 style="margin-bottom: 1rem;">Социальные сети</h3>
                         <div style="display: flex; gap: 1rem;">
-                            <a href="#" style="background: #0088cc; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                            <a href="#"
+                                style="background: #0088cc; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
                                 <i class="fab fa-telegram"></i>
                             </a>
-                            <a href="#" style="background: #45668e; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                            <a href="#"
+                                style="background: #45668e; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
                                 <i class="fab fa-vk"></i>
                             </a>
-                            <a href="#" style="background: #333; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                            <a href="#"
+                                style="background: #333; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
 
+                    <!-- Форма обратной связи -->
                     <!-- Форма обратной связи -->
                     <div>
                         <h2 style="color: #667eea; margin-bottom: 1.5rem;">Форма обратной связи</h2>
@@ -90,17 +101,23 @@
                         <form class="contact-form" id="contactForm">
                             <div class="form-group">
                                 <label for="name">Ваше имя *</label>
-                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов"
+                                    pattern="^[А-Яа-яЁёA-Za-z\s\-]{2,50}$"
+                                    title="Имя должно содержать от 2 до 50 букв (русские или английские), можно использовать пробелы и дефисы">
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                                <input type="email" id="email" name="email" required placeholder="example@mail.ru"
+                                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                    title="Введите корректный email адрес (например: example@mail.ru)">
                             </div>
 
                             <div class="form-group">
                                 <label for="phone">Телефон</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67"
+                                    pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                                    title="Введите российский номер телефона в формате: +7 (999) 123-45-67 или 89991234567">
                             </div>
 
                             <div class="form-group">
@@ -116,7 +133,9 @@
 
                             <div class="form-group">
                                 <label for="message">Опишите ваш проект *</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Опишите, какой функционал должен быть у бота..."></textarea>
+                                <textarea id="message" name="message" rows="5" required
+                                    placeholder="Опишите, какой функционал должен быть у бота..." pattern=".{10,1000}"
+                                    title="Описание должно содержать от 10 до 1000 символов"></textarea>
                             </div>
 
                             <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">
@@ -134,7 +153,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>BotMurlock</h3>
-                    <p>Профессиональная разработка Telegram ботов с 2020 года. Более 150 успешно реализованных проектов.</p>
+                    <p>Профессиональная разработка Telegram ботов с 2020 года. Более 150 успешно реализованных проектов.
+                    </p>
                 </div>
 
                 <div class="footer-section">
@@ -163,4 +183,5 @@
 
     <script src="JS/main.js"></script>
 </body>
+
 </html>
