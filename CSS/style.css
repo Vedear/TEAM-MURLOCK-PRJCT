@@ -83,7 +83,8 @@ main {
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /*background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+    background:linear-gradient(135deg, #f5f7fa55 0%, #c3cfe255 100%);
     border-radius: 15px;
     margin-bottom: 3rem;
 }
