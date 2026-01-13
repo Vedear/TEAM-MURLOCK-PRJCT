@@ -1099,3 +1099,23 @@ input:checked + .slider:before {
 .modal-content {
     animation: modalFadeIn 0.3s ease-out;
 }
+
+.nav-links {
+        flex-direction: row;
+        gap: 0px;
+        font-size: smaller;
+        white-space: nowrap;
+    }
+
+/*коррекция мобильного меню*/
+@media (max-width: 768px) {
+    .nav-links {
+            flex-direction: row;
+            gap: 0px;
+           font-size: .7em;
+            white-space: nowrap;
+        }
+    nav {
+        flex-direction: column;
+    }
+}
