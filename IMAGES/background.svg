@@ -1,0 +1,128 @@
+<!-- programming-background-light.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <!-- Градиент как в навигации -->
+        <linearGradient id="navGradient" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(135)">
+            <stop offset="0%" stop-color="#667eea48" />
+            <stop offset="100%" stop-color="#764ba2" />
+        </linearGradient>
+        
+        <!-- Светло-белые градиенты -->
+        <linearGradient id="whiteGradient">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="100%" stop-color="#f8f7ff" />
+        </linearGradient>
+        
+        <linearGradient id="whiteTransparent">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.7" />
+        </linearGradient>
+        
+        <linearGradient id="whiteSoft">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2" />
+        </linearGradient>
+        
+        <!-- Фильтры для свечения -->
+        <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feFlood flood-color="white" flood-opacity="0.3" result="color" />
+            <feComposite in="color" in2="blur" operator="in" result="glow" />
+            <feMerge>
+                <feMergeNode in="glow"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Фон -->
+    <rect width="100%" height="100%" fill="url(#navGradient)" />
+    
+    <!-- Светлые геометрические узоры -->
+    <g opacity="0.15" stroke="url(#whiteTransparent)" stroke-width="1" fill="none">
+        <!-- Диагональная сетка -->
+        <line x1="0" y1="0" x2="1200" y2="800" />
+        <line x1="400" y1="0" x2="1200" y2="400" />
+        <line x1="800" y1="0" x2="1200" y2="200" />
+        <line x1="0" y1="200" x2="1000" y2="800" />
+        <line x1="0" y1="400" x2="800" y2="800" />
+        <line x1="0" y1="600" x2="600" y2="800" />
+    </g>
+    
+    <!-- Крупные светлые символы кода -->
+    <g font-family="'SF Mono', 'Courier New', monospace" fill="url(#whiteGradient)" opacity="0.25" font-size="40">
+        <!-- Центральные символы -->
+        <text x="300" y="250" filter="url(#softGlow)">{ }</text>
+        <text x="600" y="400" filter="url(#softGlow)">&lt;/&gt;</text>
+        <text x="900" y="550" filter="url(#softGlow)">( )</text>
+        
+        <!-- Угловые символы -->
+        <text x="100" y="150" opacity="0.2">[ ]</text>
+        <text x="1100" y="200" opacity="0.2">=&gt;</text>
+        <text x="150" y="650" opacity="0.2">fn</text>
+        <text x="1050" y="700" opacity="0.2">//</text>
+    </g>
+    
+    <!-- Светлые абстрактные фигуры -->
+    <g fill="none" stroke="url(#whiteSoft)" stroke-width="1.5" opacity="0.3">
+        <!-- Круги -->
+        <circle cx="200" cy="350" r="60" />
+        <circle cx="1000" cy="450" r="80" />
+        <circle cx="600" cy="600" r="70" />
+        
+        <!-- Квадраты -->
+        <rect x="400" y="100" width="80" height="80" rx="5" />
+        <rect x="800" y="300" width="80" height="80" rx="5" />
+        <rect x="200" y="500" width="80" height="80" rx="5" />
+    </g>
+    
+    <!-- Элегантные точки-соединения -->
+    <g fill="url(#whiteGradient)" opacity="0.4">
+        <!-- Основная сетка точек -->
+        <circle cx="150" cy="200" r="4" />
+        <circle cx="350" cy="300" r="4" />
+        <circle cx="550" cy="400" r="4" />
+        <circle cx="750" cy="500" r="4" />
+        <circle cx="950" cy="600" r="4" />
+        <circle cx="1150" cy="700" r="4" />
+        
+        <!-- Дополнительные точки -->
+        <circle cx="250" cy="100" r="3" />
+        <circle cx="450" cy="200" r="3" />
+        <circle cx="650" cy="300" r="3" />
+        <circle cx="850" cy="400" r="3" />
+        <circle cx="1050" cy="500" r="3" />
+    </g>
+    
+    <!-- Тонкие соединительные линии -->
+    <g stroke="url(#whiteTransparent)" stroke-width="1" stroke-opacity="0.2" fill="none">
+        <line x1="150" y1="200" x2="350" y2="300" />
+        <line x1="350" y1="300" x2="550" y2="400" />
+        <line x1="550" y1="400" x2="750" y2="500" />
+        <line x1="750" y1="500" x2="950" y2="600" />
+        <line x1="950" y1="600" x2="1150" y2="700" />
+    </g>
+    
+    <!-- Светлые шестнадцатеричные значения -->
+    <g font-family="'Courier New', monospace" font-size="14" fill="url(#whiteGradient)" opacity="0.3">
+        <text x="50" y="50">#667eea48</text>
+        <text x="1100" y="50">#764ba2</text>
+        <text x="50" y="780">#9f7aea</text>
+        <text x="1100" y="780">#8a63d2</text>
+        <text x="600" y="50">#ffffff</text>
+        <text x="600" y="780">rgba(255,255,255,0.8)</text>
+    </g>
+    
+    <!-- Минималистичные иконки -->
+    <g opacity="0.25" fill="url(#whiteGradient)">
+        <!-- Иконка React/Vue -->
+        <circle cx="900" cy="150" r="25" fill="none" stroke="url(#whiteGradient)" stroke-width="1.5" />
+        <circle cx="900" cy="150" r="18" fill="none" stroke="url(#whiteGradient)" stroke-width="1.5" />
+        <circle cx="900" cy="150" r="11" fill="none" stroke="url(#whiteGradient)" stroke-width="1.5" />
+        
+        <!-- Иконка базы данных -->
+        <ellipse cx="300" cy="650" rx="35" ry="12" fill="none" stroke="url(#whiteGradient)" stroke-width="1.5" />
+        <rect x="265" y="650" width="70" height="40" fill="none" stroke="url(#whiteGradient)" stroke-width="1.5" />
+        <ellipse cx="300" cy="690" rx="35" ry="12" fill="none" stroke="url(#whiteGradient)" stroke-width="1.5" />
+    </g>
+</svg>
